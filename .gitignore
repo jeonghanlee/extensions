@@ -4,3 +4,7 @@ O.*
 \#*~
 \#*\#
 *.local
+bin
+src/StripTool/*
+src/medm/*
+

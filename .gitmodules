@@ -1,0 +1,6 @@
+[submodule "src/medm"]
+	path = src/medm
+	url = https://github.com/jeonghanlee/medm
+[submodule "src/StripTool"]
+	path = src/StripTool
+	url = https://github.com/jeonghanlee/StripTool
