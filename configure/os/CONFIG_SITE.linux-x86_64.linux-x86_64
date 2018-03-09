@@ -11,12 +11,12 @@
 
 -include $(TOP)/configure/os/CONFIG_SITE.linux-x86.linux-x86
 
-X11_LIB=/usr/lib64
-X11_INC=/usr/include
+#X11_LIB=/usr/lib64
+#X11_INC=/usr/include
 
 # OpenMotif location
-MOTIF_LIB=/usr/lib64
-MOTIF_INC=/usr/include
+#MOTIF_LIB=/usr/lib64
+#MOTIF_INC=/usr/include
 #MOTIF_LIB=/usr/X11R6/lib64
 #MOTIF_INC=/usr/X11R6/include
 
@@ -38,10 +38,10 @@ XRTGRAPH =
 SCIPLOT=YES
 
 # Ubuntu 12 on 64-bit has X11 at /usr/lib/x86_64-linux-gnu, Motif at /usr/lib
-#X11_LIB=/usr/lib/x86_64-linux-gnu
-#X11_INC=/usr/include/X11
-#MOTIF_LIB=/usr/lib
-#MOTIF_INC=/usr/include
+X11_LIB=/usr/lib/x86_64-linux-gnu/
+X11_INC=/usr/include
+MOTIF_LIB=/usr/lib/x86_64-linux-gnu
+MOTIF_INC=/usr/include
 
 # Ubuntu 12 64-bit is at Python 2.6
 #PYTHON_DIR=/usr/lib/python2.6
