@@ -5,6 +5,13 @@ EPICS Extensions
 git clone --recursive https://github.com/jeonghanlee/extensions
 ```
 
+```
+git clone https://github.com/jeonghanlee/extensions
+cd extensions
+git submodule update
+```
+
+
 # MEDM
 * BASE patch for MEDM
 
@@ -20,3 +27,11 @@ cd --
 ```
 
 # StripTool
+
+
+# Build
+
+``
+make
+
+``
