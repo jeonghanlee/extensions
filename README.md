@@ -1,37 +1,53 @@
 EPICS Extensions
 ---
 
-```
-git clone --recursive https://github.com/jeonghanlee/extensions
+
+# Required Packages Installation
+
+```sh
+$ git clone https://github.com/jeonghanlee/pkg_automation
+$ cd pkg_automation
+$ bash pkg_automation
 ```
 
-```
-git clone https://github.com/jeonghanlee/extensions
-cd extensions
-git submodule update
-```
+
+# EPICS Extensions Installation
+
+## EPICS Base
+
+We assume that we have already EPICS_BASE in somewhere (/epics/base-3.16.1).
 
 
-# MEDM
-* BASE patch for MEDM
+## Clone and Prepare them
+```sh
+$ git clone https://github.com/jeonghanlee/extensions
+$ cd extensions
+$ bash init.bash
+```
+
+## Set your EPICS_BASE and EPICS_HOST_ARCH
+Note that here EPICS_HOST_ARCH is linux-arm instead of linux-x86_64.
+
+```sh
+$ echo "EPICS_BASE=/epics/base-3.16.1" > configure/RELEASE.local
+$ export EPICS_HOST_ARCH=linux-arm
+```
+
+## Build MEDM and StripTool
+
+
+## MEDM
+* BASE 3.16 patch is needed for MEDM
 
 https://epics.anl.gov/base/R3-16/1-docs/KnownProblems.html
-```
-cd extensions
-
-patch -d $EPICS_BASE -p1 < patches/cvtFast.patch
-cd $EPICS_BASE
-make
-cd --
-
+```sh
+$ export EPICS_BASE=/epics/base-3.16.1
+$ bash patch_3.16.bash
 ```
 
-# StripTool
+## Build
 
+```sh
+$ make
 
-# Build
-
-``
-make
-
-``
+```
