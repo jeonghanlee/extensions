@@ -26,11 +26,18 @@ $ bash init.bash
 ```
 
 ## Set your EPICS_BASE and EPICS_HOST_ARCH
-Note that here EPICS_HOST_ARCH is linux-arm instead of linux-x86_64.
+Note that here EPICS_HOST_ARCH is linux-arm instead of linux-x86_64. 
 
 ```sh
 $ echo "EPICS_BASE=/epics/base-3.16.1" > configure/RELEASE.local
+```
+* export EPICS_HOST_ARCH
+```
 $ export EPICS_HOST_ARCH=linux-arm
+```
+or
+```
+export EPICS_HOST_ARCH=linux-x86_64
 ```
 
 ## Build MEDM and StripTool
@@ -43,6 +50,12 @@ https://epics.anl.gov/base/R3-16/1-docs/KnownProblems.html
 ```sh
 $ export EPICS_BASE=/epics/base-3.16.1
 $ bash patch_3.16.bash
+```
+
+* Debian 9
+
+```sh
+$ bash patch_no_Xp.bash
 ```
 
 ## Build

@@ -1,6 +1,4 @@
 USR_CFLAGS += -I/usr/local/include
 USR_LDFLAGS += -L/usr/local/lib
 
-#USR_CFLAGS  += `pkg-config --cflags libusb-1.0`
-#USR_LDFLAGS += `pkg-config --libs libusb-1.0`
 PROD_LDLIBS += -L/usr/local/lib
