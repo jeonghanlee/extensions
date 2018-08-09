@@ -58,6 +58,12 @@ $ bash patch_3.16.bash
 $ bash patch_no_Xp.bash
 ```
 
+* CentOS 7
+```sh
+$ bash patch_libXm.bash
+```
+
+
 ## Build
 
 ```sh

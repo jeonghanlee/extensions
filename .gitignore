@@ -7,4 +7,4 @@ O.*
 bin
 src/StripTool/*
 src/medm/*
-
+configure/os/CONFIG_SITE.linux-x86_64.linux-x86_64
