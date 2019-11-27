@@ -3,13 +3,7 @@ EPICS Extensions
 
 
 # Required Packages Installation
-
-```sh
-$ git clone https://github.com/jeonghanlee/pkg_automation
-$ cd pkg_automation
-$ bash pkg_automation
-```
-
+One should install all required packages before doing this. 
 
 # EPICS Extensions Installation
 
